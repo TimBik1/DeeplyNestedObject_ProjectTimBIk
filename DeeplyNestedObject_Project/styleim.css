@@ -1,0 +1,93 @@
+/* General styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #DEE1E3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+/* Main title styling */
+.main-title {
+    width: 1440px;
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 96px;
+    font-weight: 700;
+    margin-top: 15px; /* Further reduced margin-top */
+    margin-bottom: 20px; 
+}
+
+/* Content section styling */
+#content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    margin-top: -51px;
+}
+
+/* Paragraph without drop shadow */
+.paragraph {
+    width: 951px;
+    color: #000;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 20px; /* Further reduced margin-top */
+    margin-bottom: 16px; /* Reduced margin-bottom */
+    line-height: 1.4; /* Adjusted line-height */
+}
+
+/* Home button background */
+.home-btn-bg {
+    width: 409px;
+    height: 109px;
+    border-radius: 47px;
+    background: #0B4F80;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Further reduced margin-top */
+    cursor: pointer;
+}
+
+/* Home button text */
+.home-btn-text {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+/* Content container */
+#content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* This centers the content vertically */
+    width: 100%;
+    height: calc(100vh - 200px); /* 100vh minus header and footer height */
+    margin-top: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -6px; /* Space between the content section and the footer */
+}
+
+.home-btn-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
