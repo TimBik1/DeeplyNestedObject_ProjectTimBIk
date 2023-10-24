@@ -11,87 +11,79 @@ body {
     overflow: hidden; /* Prevents scrolling */
 }
 
-/* Main title styling */
-header h1 {
+
+
+
+
+/* Element 1 - Header background */
+.header-bg {
     width: 1440px;
-    color: #000;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 48px; /* Reduced for this title */
-    font-weight: 700;
-    margin-top: 22px;
+    height: 135px;
+    background: #DEE1E3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    z-index: -1; /* To ensure the background stays behind the title */
 }
 
-/* Tabs styling */
-nav {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin-top: 50px;
-}
-
-nav button {
-    padding: 10px 30px;
-    font-size: 20px;
-    font-weight: 700;
-    border: none;
-    background-color: #0B4F80;
-    color: #FFF;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-nav button:hover {
-    background-color: #073C57; /* Darker shade for hover effect */
-}
-
-/* Content section styling */
-#content-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #FFF; /* White background for content */
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    max-height: 50%; /* You can adjust this based on content */
-    overflow-y: auto; /* Allows scrolling if content is too much */
-}
-
-#content-section p {
-    color: #000;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    margin-top: 30px;
-    line-height: 1.5;
+/* Header Section - Main Title */
+header {
     width: 100%;
-}
-
-/* Home button at the footer */
-footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: -168px 0;
+}
+
+h1 {
+    margin-top: 9px;
+    color: #000;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 96px;
+    font-weight: 700;
+}
+
+#content-section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 80vh; /* Adjust as needed */
     width: 100%;
-    margin-top: auto; /* Pushes the footer to the bottom */
+    position: relative;
+}
+
+#vdeye-image {
+    max-width: 100%; /* Ensure the image does not overflow the container */
+    max-height: 100%;
+    /* Adjust the width and height properties to change the image size */
+    width: auto; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    position: absolute;
+    top: 39%;
+    left: 47%;
+    transform: translate(-50%, -50%); /* This will ensure the image is centered */
+}
+
+
+/* Footer - Home Button */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
 }
 
 .home-btn-text {
-    padding: 15px 30px;
+    display: inline-block;
+    padding: 24px 105px;
     background-color: #0B4F80;
     color: #FFF;
-    font-size: 24px;
+    font-size: 48px;
     font-weight: 700;
+    border-radius: 34px;
     cursor: pointer;
-    border: none;
-    border-radius: 5px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    user-select: none;
-    transition: background-color 0.3s;
-}
-
-.home-btn-text:hover {
-    background-color: #073C57; /* Darker shade for hover effect */
+    user-select: none;  /* Makes sure the text doesn't get highlighted upon clicking */
 }
